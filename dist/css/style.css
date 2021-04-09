@@ -400,15 +400,34 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   border: 0;
 }
 
-.container-big {
-  width: "80%";
-  max-width: "1120px";
-  padding: 2rem;
-  margin: 0 auto;
+.header {
+  padding: 1.9rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header ul {
+  display: none;
+}
+
+.header .burger {
+  width: 2.4rem;
+  text-align: center;
+}
+
+.header .burger .fa-bars {
+  font-size: 2.4rem;
 }
 
 footer {
-  background: #252088;
+  background: #1e1f2f;
   height: 15rem;
   text-align: center;
   margin-bottom: 2rem;
