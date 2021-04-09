@@ -1,9 +1,14 @@
 .card {
     // background-color: rgb(180, 111, 111);
     background-color:$dark-blue;
-    margin-bottom:9.6rem;
+    max-width:340px;
+    min-height:460px;
+    margin:0 auto;
+    margin-bottom:10rem;
     border-radius: 30px 4px 30px 5px;
     box-shadow: 0px 19px 20px -10px rgba(0, 0, 0, 0.45);
+    position:relative;
+    padding-bottom:2rem;
 
     &__image {
         width:100%;
@@ -47,8 +52,15 @@
 
     &:after {
         content:url('../img/separator.png');
-        position:relative;
-        top:4.6rem;
+        position:absolute;
+        right:25%;
+        bottom:-6rem;
+    }
+
+    @media screen and (min-width:768px) {
+        .card {
+            flex-shrink:0;
+        }
     }
 
 }
