@@ -375,12 +375,11 @@ ul li {
 
 /* colors */
 /* fonts */
-/* Background */
 /* Texts */
 body {
-  font-family: "Opensans", sans-serif;
-  font-size: 1.4rem;
-  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #c4c4c4;
 }
 
 /*
@@ -396,11 +395,16 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  /* added line */
   border: 0;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #1e1f2f;
+}
+
 .header {
+  background-color: white;
   padding: 1.9rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,8 +417,14 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           align-items: center;
 }
 
-.header ul {
+.header .menu {
   display: none;
+}
+
+.header .menu__item a {
+  color: #1e1f2f;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .header .burger {
@@ -424,17 +434,22 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
 
 .header .burger .fa-bars {
   font-size: 2.4rem;
+  color: #1e1f2f;
 }
 
-footer {
-  background: #1e1f2f;
-  height: 15rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-footer .copyright {
-  position: relative;
-  top: 10rem;
+@media screen and (min-width: 768px) {
+  .header .menu {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .menu__item + .menu__item a {
+    border-left: 1px solid #1e1f2f;
+    padding-left: 0.5rem;
+  }
+  .header .burger {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
