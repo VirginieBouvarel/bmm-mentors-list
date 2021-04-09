@@ -1,0 +1,54 @@
+.card {
+    // background-color: rgb(180, 111, 111);
+    background-color:$dark-blue;
+    margin-bottom:9.6rem;
+    border-radius: 30px 4px 30px 5px;
+    box-shadow: 0px 19px 20px -10px rgba(0, 0, 0, 0.45);
+
+    &__image {
+        width:100%;
+        border-radius: 30px 4px 0 0;
+    }
+
+    &__name {
+        color:$white;
+        font-size:3rem;
+        font-weight:400;
+        background-color:$dark-blue;
+        padding:1rem;
+        display:inline;
+        border-radius:50px;
+        position:relative;
+        top:-2rem;
+    }
+
+    &__job {
+        color:$pink;
+        font-style:italic;
+        margin-bottom:3.6rem;
+    }
+
+    &__text {
+        font-style:italic;
+        margin-bottom:1.4rem;
+    }
+
+    &__time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:2.1rem;
+    }
+
+    &__time p {
+        margin-left:1rem;
+        font-weight:700;
+    }
+
+    &:after {
+        content:url('../img/separator.png');
+        position:relative;
+        top:4.6rem;
+    }
+
+}
