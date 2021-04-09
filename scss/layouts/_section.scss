@@ -5,7 +5,7 @@
 
     .title {
         font-size: 46px;
-        font-weight: map-get($weights, bolder); // utilisation d'une map
+        font-weight: bolder; // utilisation d'une map
         color: $color-text-base;
         background-color: #fff;
         padding-left:1rem;
